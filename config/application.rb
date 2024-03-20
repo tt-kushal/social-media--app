@@ -19,15 +19,15 @@ module PicSphere
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
-    config.before_configuration do
-      Aws.config.update({
-        region: 'your_aws_region', # Replace with your AWS region, e.g., 'us-east-1'
-        credentials: Aws::Credentials.new(
-          ENV['AWS_ACCESS_KEY_ID'],
-          ENV['AWS_SECRET_ACCESS_KEY']
-        ),
-      })
-    end
+    # config.before_configuration do
+    #   Aws.config.update({
+    #     region: 'your_aws_region', # Replace with your AWS region, e.g., 'us-east-1'
+    #     credentials: Aws::Credentials.new(
+    #       ENV['AWS_ACCESS_KEY_ID'],
+    #       ENV['AWS_SECRET_ACCESS_KEY']
+    #     ),
+    #   })
+    # end
 
     config.action_cable.mount_path = '/cable'
 
