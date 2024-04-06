@@ -1,7 +1,7 @@
 source "https://rubygems.org"
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+# git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.2"
+ruby "3.2.3"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"
@@ -40,8 +40,8 @@ gem 'arctic_admin', '~> 3.3'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'ransack', '~> 2.5'
-gem 'aws-sdk', '~> 3'
-gem 'stripe'
+# gem 'aws-sdk', '~> 3'
+# gem 'stripe'
 gem 'actioncable'
 
 
@@ -68,7 +68,7 @@ gem "sassc-rails"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  # gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "byebug"
   gem "rspec-rails"
   gem "factory_bot_rails"
